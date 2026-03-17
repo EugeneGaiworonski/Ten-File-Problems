@@ -39,13 +39,13 @@ int main() {
         return (errno);
     }
 
-    // Line by line reading
+    // Line by line reading and line counting
     while (fgets(buf, sizeof(buf), sFile)) lineNumber++;
 
     // Close file
     fclose(sFile);
+    
     printf("File %s contains %d lines\n", sFileName, lineNumber);
 
     return 0;
 }
-
