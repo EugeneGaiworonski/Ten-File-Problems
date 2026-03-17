@@ -25,11 +25,6 @@
 
 #define MAX_LENGTH 256
 
-#include <stdio.h>
-#include <stdlib.h>
-
-#define MAX_LENGTH 256
-
 int main() {
     char phrase[MAX_LENGTH];
     FILE *file;
