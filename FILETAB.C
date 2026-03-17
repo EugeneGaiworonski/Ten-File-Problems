@@ -32,14 +32,14 @@ int main() {
 
     char buf[80] = { '\0' };
     
-    // Open source file for reading
+    // Open file for writing
     tFile = fopen(tFileName, "w");
     if (tFile == NULL) {
         perror("");
         return (errno);
     }
 
-    // Line by line writing
+    // Line by line calculation and writing 
     for (int row = 1; row <= 10; row++) {
         for (int col = 1; col <= 10; col++) fprintf(tFile, "%2i x%2i%=%3i  ", row, col, (row * col));
         fprintf(tFile, "\n");
