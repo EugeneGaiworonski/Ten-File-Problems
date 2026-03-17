@@ -70,6 +70,7 @@ int main() {
     fclose(s1File);
     fclose(s2File);
     fclose(tFile);
+    
     printf("Files %s and %s successfully merged to file %s\n", s1FileName, s2FileName, tFileName);
 
     return 0;
