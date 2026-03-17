@@ -1,5 +1,5 @@
 /*
-	Name: FILECREAT.C
+	Name: FILECOPY.C
 	
 	Copyright: (C) 2026 E. Gaiworonski
 	This program is free software: you can redistribute it and/or modify
@@ -29,7 +29,7 @@
 int main() {
     char sFileName[MAX_LENGTH] = {0};
     char buf = 0;
-		FILE *sFile;
+	FILE *sFile;
     FILE *tFile;
 
     // Prompt the user for a source file name
@@ -53,15 +53,15 @@ int main() {
     if (tFile == NULL) {
         printf("Error opening file.\n");
         flose(sFile); // Cleanup the opened source file
-				return 1;
+		return 1;
     }
 		
-		// Read/write operations
-		while (fread(&buf,1,1,sFile) == 1) fwrite(&buf,1,1,tFile);
+	// Read/write operations
+	while (fread(&buf,1,1,sFile) == 1) fwrite(&buf,1,1,tFile);
     
     // Close the file
     fclose(sFile);
-		fclose(tFile);    
+	fclose(tFile);    
     printf("File successfully copied to file copy.txt\n");
     
     return 0;
