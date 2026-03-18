@@ -12,29 +12,29 @@ Description: Copies a file from a user-specified source to a target file named "
 	
 FILECREAT.C
 --	
-Description: 
+Description: The program prompts the user for a text phrase and writes it to the "output.txt" file
 	
 FILEJOIN.C
 --	
-Description:
+Description: Process two text files file1.txt and file2.txt, merging their contents into one file result.txt
 	
 FILELNUM.C
 --	
-Description:
+Description: Сounting the number of lines in a text file
 	
 FILESTAT.C
 --	
-Description:
+Description: Reads the text.txt file and counts the frequency of each Latin letter (including both uppercase and lowercase forms). The results are saved to the stats.txt file.
 	
 FILETAB.C
 --	
-Description:
+Description: Printing the multiplication table to a file
 	
 FILETRIM.C
 --	
-Description:
+Description: Trims empty lines from a text file
 	
 FILEWCSV.C
 --	
-Description:
+Description: Reads a simple CSV file data.csv and displays its contents on the screen
 	
